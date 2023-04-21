@@ -5,7 +5,7 @@ host : ``` https://localhost ```
 
 ## endpoint 
 
-**user** :
+>**user** :
 - register (POST) : ```/users/register``` \
   use json format  
   ```json
@@ -25,7 +25,7 @@ host : ``` https://localhost ```
     }
   ```
 
-**social media** : 
+>**social media** : 
 - getAllSocialMedia (GET) : ``` /social-media  ```
 - getOneSocialMedia (GET) : ``` /social-media/:id  ```
 - createSocialMedia (POST) : ``` /social-media/create ``` \
@@ -47,7 +47,7 @@ use json format
   ```
 - deleteSocialMedia (DELETE) : ``` /social-media/delete/:id  ```
 
-**photos** : 
+>**photo** : 
 - getAllPhotos (GET) : ``` /photos  ```
 - getOnePhoto (GET) : ``` /photos/:id  ```
 - createPhoto (POST) : ``` /photos/create ``` \
@@ -72,7 +72,7 @@ use json format
 - deletePhoto (DELETE) : ``` /photos/delete/:id  ```
 
 
-**comments** : 
+>**comment** : 
 - getAllComments (GET) : ``` /comments/:photo_id  ```
 - getOneComment (GET) : ``` /comments/:id  ```
 - createComment (POST) : ``` /comments/create/:photo_id ``` \
