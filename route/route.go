@@ -18,7 +18,7 @@ func RegisterApi(r *gin.Engine, handler handler.HttpServer) {
 	{
 		comment.Use(middleware.Authentication())
 		comment.GET("/:photo_id", handler.GetAllComment)
-		comment.GET("/:photo_id/:id", handler.GetOneComment)
+		comment.GET("/:id", handler.GetOneComment)
 		comment.POST("/create/:photo_id", handler.CreateComment)
 		comment.PUT("/update/:id", middleware.CommentAuthorization(), handler.UpdateComment)
 		comment.DELETE("/delete/:id", middleware.CommentAuthorization(), handler.DeleteComment)
